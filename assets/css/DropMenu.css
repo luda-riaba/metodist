@@ -1,0 +1,91 @@
+.submenu {
+    width: 100%;
+    height: 200px;
+    z-index: 999;
+    font-family: 'IBM Plex Sans', 'Play', sans-serif;
+    font-weight: bold;
+    line-height: 10px;
+    letter-spacing: 2px;
+}
+
+.submenu ul {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    position: relative;
+}
+
+.submenu ul li {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.submenu ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #FBF7F7;
+    line-height: 1.2em;
+    padding: 10px 15px;
+    background: #3A9CD3;
+    border-top: 1px solid #236A92;
+    text-decoration: none;
+    transition-duration: .9s;
+    transition-timing-function: cubic-bezier(0.255, 0.03, 0.315, 0.955);
+}
+
+.submenu ul li:first-child a {
+    border: 0px;
+}
+
+.submenu ul li a:hover,
+.submenu ul li:hover a {
+    background: rgb(10, 60, 193);
+}
+
+.submenu ul li ul {
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    display: none;
+    width: auto;
+    padding-left: 13px;
+}
+
+/*******показываем выпадашку при наведении ********/
+.submenu ul li:hover ul {
+    display: block;
+}
+
+.submenu ul li ul li a {
+    white-space: nowrap;
+    text-transform: none;
+    padding: 10px 20px;
+}
+
+.submenu ul li ul li a::after {
+    border-bottom: 1px solid #3d3d3d;
+}
+
+.submenu ul li ul li:first-child a {
+    border-radius: 5px 5px 0px 0px;
+}
+
+.submenu ul li ul li:last-child a {
+    border-radius: 0px 0px 5px 5px;
+}
+
+.submenu ul li ul li a:hover {
+    background: #75C1D4;
+    color: #0A3CC1;
+}
